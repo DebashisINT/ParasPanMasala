@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "321984493324",
+    "project_id": "paras-pan-masala-fsm",
+    "storage_bucket": "paras-pan-masala-fsm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:321984493324:android:9c8d70ead68f21e5efbb29",
+        "android_client_info": {
+          "package_name": "com.breezefsmparaspanmasala"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD80aKU2PPTPI3bn_iP5sPMsvFe0yhDv8M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
