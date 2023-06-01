@@ -1,7 +1,7 @@
 <resources>
     <!--<string name="app_name">Field Tracking System</string>-->
     <string name="app_name" translatable="false">Radhika FSM</string>
-    <string name="blank" translatable="false"></string>
+    <string name="blank" translatable="false"></string>C
     <string name="enter_a_title" translatable="false">Enter a title</string>
     <string name="entry_details_default_text" translatable="false">Entry Details!</string>
     <string name="submit_button_text" translatable="false">Submit</string>
