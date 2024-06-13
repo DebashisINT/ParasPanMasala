@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".features.mylearning.MyLearningFragment">
+    <LinearLayout
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:background="@drawable/back_round_corner_8"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/search_icon_"
+            android:layout_gravity="center"/>
+
+            <com.breezefsmparas.widgets.AppCustomEditText
+                android:id="@+id/et_frag_contacts_search"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:hint="Search here"
+                android:textColorHint="#A1A1A1"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:singleLine="true"
+                android:paddingLeft="@dimen/_10sdp" />
+
+        <ImageView
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/_28sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:src="@drawable/search_audio_a"></ImageView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white"
+                >
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/idIVImage"
+                        android:padding="@dimen/_15sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_250sdp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/testingimg"/>
+
+                    <TextView
+                        android:id="@+id/tv_photo_item"
+                        android:text="Learner\nSpace"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_18sdp"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:src="@drawable/back"
+                        android:layout_gravity="top|end"/>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/_15sdp">
+
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_150sdp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/testingimg"
+                    android:layout_marginEnd="@dimen/_15sdp"/>
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_150sdp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/testingimg"
+                    android:layout_marginEnd="@dimen/_15sdp"/>
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_150sdp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/testingimg"/>
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/idRVPhotos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                />
+
+
+        </LinearLayout>
+
+        <com.etebarian.meowbottomnavigation.MeowBottomNavigation
+            android:id="@+id/bottomNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:mbn_circleColor="#39AFCC"
+            app:mbn_backgroundBottomColor="@color/colorAccent"
+            app:mbn_countBackgroundColor="#ff6f00"
+            app:mbn_countTextColor="#ffffff"
+            app:mbn_defaultIconColor="@color/white"
+            app:mbn_rippleColor="#2f424242"
+            app:mbn_selectedIconColor="@color/white"
+            app:mbn_shadowColor="#1f212121"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/_5sdp">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Performance"
+                android:textStyle="bold"
+                android:gravity="center|top"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/white"/>
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="My Learning"
+                android:textSize="@dimen/_10sdp"
+                android:gravity="center|top"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Leaderboard"
+                android:gravity="center|top"
+                android:textStyle="bold"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/white"/>
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Knowledge Hub"
+                android:gravity="center|top"
+                android:textStyle="bold"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

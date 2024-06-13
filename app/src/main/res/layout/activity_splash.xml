@@ -8,20 +8,20 @@
 
     <ImageView
         android:id="@+id/logo_new"
-        android:layout_width="@dimen/_155sdp"
-        android:layout_height="@dimen/_70sdp"
+        android:layout_width="@dimen/_215sdp"
+        android:layout_height="@dimen/_130sdp"
         android:src="@drawable/breezelogo"
         android:layout_marginTop="@dimen/_170sdp"
         android:layout_centerHorizontal="true" />
 
-    <com.breezefsmparaspanmasala.widgets.AppCustomTextView
+    <com.breezefsmparas.widgets.AppCustomTextView
+        android:visibility="gone"
         android:id="@+id/Logo_name_TV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/logo_new"
         android:layout_centerHorizontal="true"
         android:layout_gravity="center"
-        android:visibility="gone"
         android:layout_marginTop="@dimen/_10sdp"
         android:gravity="center|center_horizontal"
         android:text="@string/name_filed_managenent_system"
@@ -40,7 +40,7 @@
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/_300sdp"
         wheel:matProg_barColor="@color/default_text_color"
         wheel:matProg_progressIndeterminate="true" />
 
